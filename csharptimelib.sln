@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTimeLib", "csharptimelib\CSharpTimeLib.csproj", "{D61D391F-26FD-4419-A5A9-CABDA03D2697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLibTestProject", "TimeLibTestProject\TimeLibTestProject.csproj", "{054A216C-3586-45C9-8764-17C644F07663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D61D391F-26FD-4419-A5A9-CABDA03D2697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61D391F-26FD-4419-A5A9-CABDA03D2697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61D391F-26FD-4419-A5A9-CABDA03D2697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61D391F-26FD-4419-A5A9-CABDA03D2697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054A216C-3586-45C9-8764-17C644F07663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054A216C-3586-45C9-8764-17C644F07663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054A216C-3586-45C9-8764-17C644F07663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054A216C-3586-45C9-8764-17C644F07663}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F232A7D-8BFC-4843-8DC4-0B9E86D0C488}
+	EndGlobalSection
+EndGlobal
