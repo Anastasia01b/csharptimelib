@@ -36,7 +36,7 @@ namespace CSharpTimeLib
             }
             else
             {
-                
+               throw new FormatException();
             }
         }
 
