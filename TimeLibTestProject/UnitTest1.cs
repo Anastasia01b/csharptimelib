@@ -6,17 +6,24 @@ namespace TimeLibTestProject
     [TestFixture]
     public class TimeTests
     {
-        [TestCase(2, 70, 56, 3, 10, 56, "03:10:56")]
-        [TestCase(12, 99, 70, 13, 40, 10, "13:40:10")]
-        [TestCase(14, 15, 10, 14, 15, 10, "14:15:10")]
-        [TestCase(24, 49, 82, 24, 50, 22, "24:50:22")]
-        public void TestToString(int h1, int m1, int s1, int h2, int m2, int s2, string expected)
+        [TestCase(3, 10, 56, "03:10:56")]
+        [TestCase(13, 40, 10, "13:40:10")]
+        [TestCase(14, 15, 10, "14:15:10")]
+        [TestCase(24, 50, 22, "24:50:22")]
+        public void TestToStringValid(int h, int m, int s, string expected)
         {
-            var time1 = new Time(h1, m1, s1);
-            var time2 = new Time(h2, m2, s2);
-
-            Assert.AreEqual(expected, time1.ToString());
-            Assert.AreEqual(expected, time2.ToString());
+        var actual = new Time(h, m, s);
+        Assert.AreEqual(expected, actual.ToString());
+        }
+        
+        [TestCase(2, 40, 56, "03:10:56")]
+        [TestCase(12, 19, 70, "13:40:10")]
+        [TestCase(13, 15, 10, "14:15:10")]
+        [TestCase(22, 49, 82, "24:50:22")]
+        public void TestToStringInvalid(int h, int m, int s, string expected)
+        {
+        var actual = new Time(h, m, s);
+        Assert.AreNotEqual(expected, actual.ToString(),$"expected:{expected} actual:{actual}");
         }
 
 
